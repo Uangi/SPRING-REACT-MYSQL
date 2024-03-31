@@ -1,8 +1,8 @@
-package com.jyp.boardback.repository;
+// package com.jyp.boardback.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+// import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.jyp.boardback.Model.ChatMessage;
+// import com.jyp.boardback.Model.ChatMessage;
 
-public interface ChatMessageRepository extends JpaRepository<ChatMessage, Long> {
-}
+// public interface ChatMessageRepository extends JpaRepository<ChatMessage, Long> {
+// }
