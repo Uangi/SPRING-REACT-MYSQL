@@ -1,0 +1,17 @@
+<인증방식 종류>
+
+Bearer Token Authentication
+- 헤더에 토근을 포함한 전송
+- JWT를 이용한 인증
+- 간단한 방식, 상태를 유지하지 않고 확장성이 높으나 토큰 노출 위험
+
+OAuth 
+- 토큰 기반 인증 방식, 사용자가 직접 자격 증명 x
+- 미리 인증 받아서 토큰 발급 받고 토근을 이용하여 API에 요청
+
+
+JWT (json web Token)
+클레임이라고 불리는 정보를 JSON 형태로 전송하기 위한 토큰
+1. Header: 토큰의 타입과 알고리즘 정보 / Base64Url로 인코딩
+2. payload: 클레임 정보, 대상, 발행자, 만료 시간
+3. Signature: Header와 payload, secret key를 사용하여 생성된 서명
