@@ -3,9 +3,9 @@
     "version": "2.2.13",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -730,
-    "scrollLeft": -608.3359375,
-    "zoomLevel": 0.6,
+    "scrollTop": -715.5216999999998,
+    "scrollLeft": -693.2051651967931,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -211,9 +211,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 516.0945981249452,
-          "top": 999.3170910031799,
-          "zIndex": 3,
+          "left": 476.0946,
+          "top": 1004.3171,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 84.5703125,
           "color": "#FFEB3B"
@@ -855,8 +855,8 @@
           "columnIds": [
             "58e6431c-1578-4620-a6c2-e97b25fbcdfe"
           ],
-          "x": 977.3895199999452,
-          "y": 1158.69209100318,
+          "x": 937.389521875,
+          "y": 1163.6921,
           "direction": "right"
         },
         "end": {
@@ -881,8 +881,8 @@
           "columnIds": [
             "58e6431c-1578-4620-a6c2-e97b25fbcdfe"
           ],
-          "x": 977.3895199999452,
-          "y": 1052.44209100318,
+          "x": 937.389521875,
+          "y": 1057.4421,
           "direction": "right"
         },
         "end": {
@@ -933,8 +933,8 @@
           "columnIds": [
             "58e6431c-1578-4620-a6c2-e97b25fbcdfe"
           ],
-          "x": 746.7420590624452,
-          "y": 999.3170910031799,
+          "x": 706.7420609375,
+          "y": 1004.3171,
           "direction": "top"
         },
         "end": {

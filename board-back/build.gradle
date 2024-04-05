@@ -1,14 +1,14 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '2.7.5'
+	id 'org.springframework.boot' version '2.7.14'
 	id 'io.spring.dependency-management' version '1.1.4'
 }
 
-group = 'com.jyp'
+group = 'com.study'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '11'
+	sourceCompatibility = '17'
 }
 
 configurations {
@@ -26,15 +26,19 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
-	implementation group: 'io.jsonwebtoken', name : 'jjwt', version: '0.9.1'
+	hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
 }
 
+tasks.named('bootBuildImage') {
+	builder = 'paketobuildpacks/builder-jammy-base:latest'
+}
 
 tasks.named('test') {
 	useJUnitPlatform()
